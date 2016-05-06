@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  
+  
+  <link rel="stylesheet" type="text/css" href="/static/mystyle.css">
+</head>
+<body>
+  <ul id="NavBar">
+  <li><a class="active" href="Homepage.html">Homepage</a></li>
+  <li><a href="Cv.html"> Cv </a></li>
+  <li><a href="Portfolio.html"> My Portfolio</a></li>
+  <li><a href="AboutMe.html">About Me</a></li>
+  <li><a href="ContactUs.html">Contact Us</a></li>
+  </ul>
+  
+<div class="jumbotron contact-info text-center" style="margin-right:5em;margin-left:5em">
+  
+  <h4>To leave a comment press the button</h4>
+  <div>
+    <button id="commentbutton" class="btn btn-primary form-control">Comment</button>
+  </div>
+  
+  <form id="form" action="" method="post" style="display: none">
+    
+    <div class="container text-center">
+      <h3>Personal Information</h3>
+    </div>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" class="form-control" placeholder="First Name">
+    <br>
+    <br>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" class="form-control">
+    
+    <br>
+    <br>
+    
+    <label for="lname">Email</label>
+    <input type="text" id="email" name="email" class="form-control">
+    <br>
+    <br>
+    <label for="country">State</label>
+    <select id="country" name="country" class="form-control">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="uk">United Kingdom</option>
+      <option value="northern ireland">Northern Ireland</option>
+      <option value="scotland">Scotland</option>
+    </select>
+    
+    
+    <br>
+    <br>
+    <label for="comment">Comment</label>
+    <input type="text" id="comment" name="comment" class="form-control" placeholder="Comment">
+    <br>
+    <br>
+     <br>
+    <input class="btn btn-primary form-control" type="submit" value="Submit">
+  </form>
+  
+    
+  <section>
+    <div class="container">
+      <div class="row text-center">
+        
+        Phone: 123-456-7890
+        EMail: example@example.com
+        
+      </div>
+    
+    </div>
+   </div>
+  </section>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+ <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+<script>
+  
+  $('#commentbutton').on('click', function(){
+    ///this code here is executed whenever the comment button is clicked
+    
+    
+    $('#form').show(1000);
+  });
+  
+  
+</script>
+
+</body>  
+</html>
