@@ -190,3 +190,29 @@ li a:hover {
         color: black; 
   }
 
+table {
+  float: left;
+  text-align: left;
+}
+
+.section {
+       float: inherit;
+       text-align: center;
+       font-family: Calibri;
+       font-size: 25px;
+       font-style: normal;
+       font-weight: bold;
+       text-shadow: 1px 1px 1px;
+       letter-spacing: 2px;
+       line-height: 25px;
+       text-indent: 2px;
+       color: #0066FF;
+       height: 10px;
+       background-color: inherit;
+       margin: 0 1.5%;
+       width: 63;
+   }
+   
+   #portfolio{
+     text-align: center;
+   }
